@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+        <ul class="info-area">
+            <li class="content-column" data-tab-name="new-tab">
+                <div class="parte-cima">
+                    <div class="icon-page">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div>
+                        <h1>NOVO CONTATO</h1>
+                        <p>Cadastrar novo contato</p>
+                    </div>
+                </div>
+                <div class="telefone-area">
+                    <div class="create-contact">
+                        <label for="nameArea">Nome</label>
+                        <input type="text" class="input-area" id="nameArea" placeholder="Ex: Jhon doe"
+                            autocomplete="off" />
+                    </div>
+                    <div class="create-contact">
+                        <label for="telArea">Telefone</label>
+                        <input type="text" class="input-area" id="telArea" maxlength="9" placeholder="0000-0000"
+                            autocomplete="off" />
+                    </div>
+                    <div class="wrapper-row">
+                        <button id="btnSave" class="btn">SALVAR</button>
+                    </div>
+                </div>
+            </li>
+            <li class="content-column" data-tab-name="search-num">
+                <div class="parte-cima">
+                    <div class="icon-page">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div>
+                        <h1>PESQUISAR</h1>
+                        <p>Todos os seus contatos em uma única lista</p>
+                    </div>
+                </div>
+                <div class="telefone-area">
+                    <input type="text" placeholder="Ex: Jhon Doe" class="input-area" id="searchContact" />
+                    <div class="lista-telefone" id="listaTelSearch"></div>
+                </div>
+            </li>
+            <li class="content-column" data-tab-name="contact-tab">
+                <div class="parte-cima " data-tab-name="contact-tab">
+                    <div class="icon-page">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="title-area">
+                        <h1>LISTA</h1>
+                        <p>Todos os seus contatos em uma única lista</p>
+                    </div>
+                </div>
+                <div class="telefone-area">
+                    <div class="lista-telefone" id="listaTel"></div>
+                </div>
+            </li>
+        </ul>
+        <nav class="line">
+            <ul class="tabs-area" id="changeTab">
+                <li>
+                    <button data-ref="new-tab" class="button-area button-active"><i
+                            class="fa-solid fa-plus icon-page"></i>Novo</button>
+                </li>
+                <li>
+                    <button data-ref="search-num" class="button-area"><i
+                            class="fa-solid fa-magnifying-glass icon-page"></i>Pesquisar</button>
+                </li>
+                <li>
+                    <button data-ref="contact-tab" class="button-area"><i
+                            class="fa-solid fa-phone icon-page"></i>Contatos</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

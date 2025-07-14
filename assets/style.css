@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    background-color: #E4E7F0;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+[data-tab-name] {
+    display: none;
+}
+
+[data-tab-name].active {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    border-radius: 0.5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.content-column {
+    flex-direction: column;
+}
+
+.create-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.parte-cima {
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(to right, #0B3882, #0C2A5B);
+    padding: 1em;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 0.5em;
+}
+
+.icon-page {
+    flex-shrink: initial;
+    font-size: 1.75em;
+    padding: 0.5em;
+    pointer-events: none;
+    align-self: center;
+}
+
+.title-area {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.telefone-area {
+    display: flex;
+    margin: 2em;
+    flex-direction: column;
+    color: #123A54;
+    gap: 1em;
+    min-height: 200px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.input-area {
+    height: 40px;
+    border-radius: 0.5em;
+    border: solid #E2E8F0 2px;
+    padding: 1em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #094AB4;
+    padding: 0.5em;
+    gap: 0.5em;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #094AB41A;
+    border-radius: 10em;
+    width: 36px;
+    height: 36px;
+
+}
+
+.info-area {
+    list-style: none;
+    width: 100%;
+    background-color: #FFFFFF;
+    gap: 1em;
+    border-radius: 1em;
+}
+
+.tabs-area {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    margin: 1em;
+}
+
+.wrapper-row {
+    display: flex;
+    width: 100%;
+}
+
+#btnSave {
+    display: flex;
+    margin-left: auto;
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 1.5em;
+    background-color: #0B3882;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.line {
+    border-top: 1px solid #E4E7F0;
+}
+
+.button-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 134px;
+    height: 40px;
+    border: none;
+    border-radius: 2em;
+    background-color: #FFFFFF;
+    color: #353944;
+    cursor: pointer;
+}
+
+.button-active {
+    cursor: pointer;
+    background-color: #0062FF1A;
+    color: #0062FF;
+    border: none;
+    width: 134px;
+}
